@@ -1,0 +1,148 @@
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+path {
+  fill: rgb(197, 252, 197);
+  stroke: rgb(18, 18, 18);
+  stroke-width: .5px;
+}
+
+.towns{
+  fill: rgba(1, 15, 18, 0.74);
+stroke: rgb(208, 208, 208);
+stroke-width: 1px;
+}
+
+path.active {
+  fill: rgb(4, 78, 29);
+}
+circle.active {
+  fill: rgb(98, 98, 226);
+}
+
+.place-label{
+  color: black;
+  text-size-adjust: 5px;
+  font-size: 10px;
+}
+
+
+#tooltip{
+  visibility: hidden;
+   width: 8cm;
+   height: 4cm;
+   text-align: center;
+   white-space: pre-wrap;
+}
+
+#countytip{
+  visibility: hidden;
+   text-align: center;
+}
+
+#title{
+  font-size: 28px;
+  color: #a24d08;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+#description a{
+  text-decoration: none;
+  color: #FDF1E7;
+  text-align: center;
+}
+
+#container{
+  display: flex;
+  align-items: flex-start;
+  width: fit-content;
+  background: rgb(161, 231, 205);
+}
+
+#rightSide{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 50px;
+  margin-top: 40px;
+  color: rgb(8, 8, 8);
+  font-family: 'Times New Roman';
+  font-size: larger;
+  align-items: center;
+}
+
+svg{
+  background-color: #305555;
+  padding: 10px;
+  padding-left: 60px;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 40px;
+  align-self: center;
+}
+
+.slidecontainer {
+  width: 80%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  border-radius: 40px;
+  background: #faf8f8; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #000906; /* Green background */
+  border-radius: 50%;
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+footer {
+  text-align: center;
+  padding: 45px;
+  color: rgb(11, 10, 10);
+}
