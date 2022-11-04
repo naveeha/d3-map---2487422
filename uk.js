@@ -6,9 +6,7 @@ height = 800,
 width = 750;
 
 
-let geoData, count, range
-let populationData
-let coords , county;
+let geoData, count, range, populationData, coords, county;
 
 
 let tooltip = d3.select('#tooltip')
@@ -92,6 +90,8 @@ function drawCircle(){
       	.classed("active",false)
           tooltip.transition()
           .style('visibility', 'hidden')
+          coutrytip.transition()
+          .style('visibility', 'hidden')
     })
 
 
@@ -167,10 +167,10 @@ function loadNewData(){
                console.log(error);
            }else{    
              populationData = data;
-             var paras = document.getElementsByClassName("towns");
+             var town = document.getElementsByClassName("towns");
              var name =  document.getElementsByClassName("place-label");
-             while(paras[0]){
-                paras[0].parentNode.removeChild(paras[0]);
+             while(town[0]){
+                town[0].parentNode.removeChild(town[0]);
                 name[0].parentNode.removeChild(name[0]);
              }
 
@@ -179,10 +179,8 @@ function loadNewData(){
                
            }
            })
-        
-//window.location.reload() =;
 
- console.log(count)
+ //console.log(count)
 
 }
 
