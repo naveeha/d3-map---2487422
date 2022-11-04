@@ -80,7 +80,7 @@ function drawCircle(){
         tooltip.transition()
             .style('visibility', 'visible')
             tooltip.text("County:" + d['County'] + "\n Town:" + d['Town'] + "\n Population: " + d['Population']
-            +"\n Longertide: " + d['lng']+ "\n Latitude: " + d['lat'] )
+            +"\n Longitude: " + d['lng']+ "\n Latitude: " + d['lat'] )
             coutrytip.transition()
             .style('visibility', 'visible')
             coutrytip.text("Country Name: " + geoData.properties.NAME_1 )
