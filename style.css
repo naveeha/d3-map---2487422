@@ -27,9 +27,11 @@ circle.active {
 }
 
 .place-label{
-  color: black;
+ color: #FDF1E7;
   text-size-adjust: 5px;
   font-size: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 750;
 }
 
 
